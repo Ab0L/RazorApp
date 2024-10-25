@@ -1,0 +1,33 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="FluentValidation.AspNetCore" Version="11.3.0" />
+    <PackageReference Include="MediatR" Version="12.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="5.0.17" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.17" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="8.0.2" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\RazorApp.Domain\RazorApp.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Dtos\Admin\Address\Validators\" />
+    <Folder Include="Dtos\Admin\ApplicationUser\Validators\" />
+    <Folder Include="Dtos\Admin\City\Validators\" />
+    <Folder Include="Dtos\Admin\Country\" />
+    <Folder Include="Dtos\Admin\State\" />
+    <Folder Include="Features\Admin\Address\Handlers\Queries\" />
+    <Folder Include="Features\Admin\Address\Requests\Queries\" />
+    <Folder Include="Features\Admin\ApplicationUser\Handlers\Queries\" />
+    <Folder Include="Features\Admin\ApplicationUser\Requests\Queries\" />
+  </ItemGroup>
+
+</Project>
